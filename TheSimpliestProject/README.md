@@ -1,3 +1,0 @@
-# TheSimpliestProject
-FEDOR
-fedor
