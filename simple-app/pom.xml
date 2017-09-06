@@ -4,7 +4,7 @@
   <groupId>com.no</groupId>
   <artifactId>simple-app</artifactId>
   <packaging>jar</packaging>
-  <version>1.0-SNAPSHOT</version>
+  <version>App</version>
   <name>simple-app</name>
   <url>http://maven.apache.org</url>
   <dependencies>
