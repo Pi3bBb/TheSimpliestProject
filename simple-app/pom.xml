@@ -14,5 +14,14 @@
       <version>3.8.1</version>
       <scope>test</scope>
     </dependency>
+    
+I believe most web/app servers come bundled with a version of the servlet api, so you won't want to bundle the api in your .war file. You will need to find out which version is included with your server, then you can use
+
+<dependency>
+    <groupId>javax.servlet</groupId>
+    <artifactId>servlet-api</artifactId>
+    <version>2.4</version>
+    <scope>provided</scope>
+</dependency>
   </dependencies>
 </project>
