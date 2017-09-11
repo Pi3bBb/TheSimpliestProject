@@ -31,7 +31,7 @@ public class MyUI extends UI {
 
         Button button = new Button("Click Me");
         button.addClickListener( e -> {
-            layout.addComponent(new Label("Thanks " + name.getValue() 
+            layout.addComponent(new Label("Thanks " + FUp.remane(name.getValue())
                     + ", it works!"));
         });
         
