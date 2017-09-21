@@ -9,6 +9,7 @@ import com.vaadin.server.VaadinServlet;
 import com.vaadin.ui.Button;
 import com.vaadin.ui.Label;
 import com.vaadin.ui.TextField;
+import com.vaadin.ui.FormLayout;
 import com.vaadin.ui.UI;
 import com.vaadin.ui.VerticalLayout;
 import com.vaadin.ui.Panel;
@@ -29,7 +30,11 @@ public class MyUI extends UI {
         final Panel  panel = new Panel("Scrolling sh.t");
         panel.setHeight("100px");
         panel.setWidth("300px");
-        
+        FormLayout panel2 = new FormLayout();
+        panel2.addComponent(new TextField("aaaaasss"));
+        panel2.addComponent(new TextField("aasss"));
+        panel2.addComponent(new TextField("aaasss"));
+	panel.setContent(panel2);
         final TextField name = new TextField();
         name.setCaption("Type your name here:");
 
