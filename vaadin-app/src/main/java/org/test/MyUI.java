@@ -34,6 +34,7 @@ public class MyUI extends UI {
         panel2.addComponent(new TextField("aaaaasss"));
         panel2.addComponent(new TextField("aasss"));
         panel2.addComponent(new TextField("aaasss"));
+	panel2.setHeight("500px");
 	panel.setContent(panel2);
         final TextField name = new TextField();
         name.setCaption("Type your name here:");
