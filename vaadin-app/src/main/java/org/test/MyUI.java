@@ -29,8 +29,9 @@ public class MyUI extends UI {
         final Panel  panel = new Panel("Scrolling sh.t");
         panel.setHeight("100px");
         panel.setWidth("300px");
-        panel.setScrollable(true);
-        
+        panel.addComponent(new TextField("aaaaasss");
+        panel.addComponent(new TextField("aasss");
+        panel.addComponent(new TextField("aaasss");
         final TextField name = new TextField();
         name.setCaption("Type your name here:");
 
