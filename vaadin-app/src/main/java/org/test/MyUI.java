@@ -11,6 +11,7 @@ import com.vaadin.ui.Label;
 import com.vaadin.ui.TextField;
 import com.vaadin.ui.UI;
 import com.vaadin.ui.VerticalLayout;
+import com.vaadin.ui.Panel;
 
 /**
  * This UI is the application entry point. A UI may either represent a browser window 
@@ -25,6 +26,10 @@ public class MyUI extends UI {
     @Override
     protected void init(VaadinRequest vaadinRequest) {
         final VerticalLayout layout = new VerticalLayout();
+        final Panel  panel = new Panel("Scrolling sh.t");
+        panel.setHeight("100px");
+        panel.setWidth("300px");
+        panel.setScrollable(true);
         
         final TextField name = new TextField();
         name.setCaption("Type your name here:");
@@ -35,7 +40,7 @@ public class MyUI extends UI {
                     + ", it works!"));
         });
         
-        layout.addComponents(name, button);
+        layout.addComponents(name, button, panel);
         
         setContent(layout);
     }
